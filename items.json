@@ -1,0 +1,27 @@
+{
+  "items": [{
+    "description": "shoes",
+    "price": 30,
+    "details": "very fly",
+    "size": "9",
+    "sex": "men",
+    "image": "https://ae01.alicdn.com/kf/HTB1eHAIKpXXXXaxXVXXq6xXFXXXX/New-2013-canvas-shoes-lady-canvas-shoes-1908.jpg_350x350.jpg",
+    "type": "shoes"
+  }, {
+    "description": "shirt",
+    "price": 25,
+    "details": "only the softest material",
+    "size": "medium",
+    "sex": "men",
+    "image": "http://www.jamesbondlifestyle.com/sites/default/files/styles/fancybox_popup/public/images/product/cl014-sunspel-grey-shirt.jpg?itok=9JsNP14R",
+    "type": "clothing"
+  }, {
+    "description": "dress",
+    "price": 40,
+    "details": "fits well",
+    "size": "small",
+    "sex": "women",
+    "image": "http://www.lindybopusa.com/images/products/zoom/1451996298-20103300.jpg",
+    "type": "clothing"
+  }]
+}

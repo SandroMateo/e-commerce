@@ -1,6 +1,24 @@
-<h2 class="jumbotron" id="title">application text</h2>
+<div class="ui inverted segment">
+  <div class="ui inverted secondary pointing menu">
+    <a class="item">
+      {{#link-to 'index'}}Home{{/link-to}}
+    </a>
+    <a class="item">
+    {{#link-to 'shoes'}}Shoes{{/link-to}}
+    </a>
+    <a class="item">
+      {{#link-to 'men'}}Men's{{/link-to}}
+    </a>
+    <a class="item">
+      {{#link-to 'women'}}Women's{{/link-to}}
+    </a>
+    <button class="ui icon button">
+      {{#link-to 'cart'}}<i class="add to cart icon"></i>{{/link-to}}
+    </button>
+  </div>
+</div>
 
 <div class="container">
+
   {{outlet}}
-  <button class="ui button">Test</button>
 </div>
