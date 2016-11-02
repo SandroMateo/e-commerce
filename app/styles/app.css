@@ -1,4 +1,19 @@
+.ui.inverted.segment {
+  background-color: black;
+}
+
 .ui.icon.button {
   float: right;
   color: blue;
+  margin-right: 0;
+  margin-left: auto;
+
+}
+
+.jumbotron {
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-top: 0;
+  font-size: 5em;
 }
