@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     console.log(this.get('items.content'));
     for (var i = 0; i < this.get('itemsArray').length; i++) {
       if (this.get('itemsArray')[i]._data.sex === "men") {
-        this.get('menArray').pushObject(this.get('itemsArray')[i]._data);
+        this.get('menArray').pushObject(this.get('items.content')[i]);
       }
     }
     return this.get('menArray');

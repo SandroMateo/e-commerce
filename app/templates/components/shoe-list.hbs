@@ -1,6 +1,10 @@
 {{#each shoeSort as |shoe|}}
-  <h2>{{shoe.description}}, ${{shoe.price}}.00</h2>
-  <h4>{{shoe.details}}</h4>
-  <img src={{shoe.image}} alt="" />
+  {{log shoe.id}}
+  {{#link-to 'review' shoe.id}}
+  <h2>{{shoe._data.description}}, ${{shoe._data.price}}.00</h2>
+  <h4>{{shoe._data.details}}</h4>
+  <img src={{shoe._data.image}} alt="" />
+  {{/link-to}}
+  <br>
   <button class="ui primary button" {{action 'addToCart' shoe}}>Add To Cart</button>
 {{/each}}

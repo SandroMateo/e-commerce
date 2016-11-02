@@ -1,6 +1,9 @@
 {{#each menSort as |men|}}
-  <h2>{{men.description}}, ${{men.price}}.00</h2>
-  <h4>{{men.details}}</h4>
-  <img src={{men.image}} alt="" />
+  {{#link-to 'review' men.id}}
+  <h2>{{men._data.description}}, ${{men._data.price}}.00</h2>
+  <h4>{{men._data.details}}</h4>
+  <img src={{men._data.image}} alt="" />
+  {{/link-to}}
+  <br>
   <button class="ui primary button" {{action 'addToCart' men}}>Add To Cart</button>
 {{/each}}

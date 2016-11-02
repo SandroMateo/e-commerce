@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('men');
   this.route('women');
   this.route('shoes');
+  this.route('review', { path: '/review/:item_id' });
 });
 
 export default Router;

@@ -9,7 +9,8 @@ export default Ember.Component.extend({
     this.set('itemsArray', this.get('items.content'));
     for (var i = 0; i < this.get('itemsArray').length; i++) {
       if (this.get('itemsArray')[i]._data.type === "shoes") {
-        this.get('shoeArray').pushObject(this.get('itemsArray')[i]._data);
+        console.log(this.get('items.content')[i])
+        this.get('shoeArray').pushObject(this.get('items.content')[i]);
       }
     }
     return this.get('shoeArray');

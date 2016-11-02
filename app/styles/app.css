@@ -1,3 +1,8 @@
+img {
+  height: 300px;
+  width: auto;
+}
+
 .ui.inverted.segment {
   background-color: black;
 }
@@ -16,4 +21,9 @@
   text-align: center;
   margin-top: 0;
   font-size: 5em;
+}
+
+#detailImage {
+  height: 700px;
+  width: auto;
 }
