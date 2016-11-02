@@ -2,4 +2,5 @@
   <h2>{{women.description}}, ${{women.price}}.00</h2>
   <h4>{{women.details}}</h4>
   <img src={{women.image}} alt="" />
+  <button class="ui primary button" {{action 'addToCart' women}}>Add To Cart</button>
 {{/each}}

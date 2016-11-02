@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  shoppingCart: Ember.inject.service(),
   shoeArray: [],
   itemsArray: null,
   shoeSort: Ember.computed('itemsArray', 'shoeArray', function() {
@@ -12,5 +13,11 @@ export default Ember.Component.extend({
       }
     }
     return this.get('shoeArray');
-  })
+  }),
+
+  actions: {
+    addToCart(item) {
+      this.get('shoppingCart').add(item);
+    }
+  }
 });
