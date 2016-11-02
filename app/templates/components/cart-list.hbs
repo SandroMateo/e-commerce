@@ -1,6 +1,8 @@
+<h2>Current items in cart:</h2>
 {{#each shoppingCart.items as |item|}}
-<div class="well">
-  <h3>{{item.description}}</h3>
-  <h4>${{item.price}}</h4>
-</div>
+  <div class="well">
+    <h3>{{item.description}}</h3>
+    <h4>${{item.price}}</h4>
+  </div>
 {{/each}}
+<h3>Total: ${{totalCost}}.00</h3>

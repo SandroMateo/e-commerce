@@ -6,5 +6,5 @@
   <img src={{shoe._data.image}} alt="" />
   {{/link-to}}
   <br>
-  <button class="ui primary button" {{action 'addToCart' shoe}}>Add To Cart</button>
+  <button class="ui primary button" {{action 'addToCart' shoe._data}}>Add To Cart</button>
 {{/each}}

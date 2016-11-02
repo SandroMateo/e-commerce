@@ -1,0 +1,15 @@
+{{#if addNewReview}}
+  <form>
+    <div class="form-group">
+      <label for="rating">Rating:</label>
+      {{input type="number" value=rating}}
+    </div>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      {{input type="text" value=comment}}
+    </div>
+    <button class="ui primary button" {{action 'addReview'}}>Finish</button>
+  </form>
+{{else}}
+  <button class="ui primary button" {{action 'showReviewForm'}}>Review This Item</button>
+{{/if}}
