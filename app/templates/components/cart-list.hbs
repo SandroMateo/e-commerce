@@ -1,17 +1,16 @@
+<h3 id="totalCost">Current Total: ${{totalCost}}.00</h3>
+
 <h2>Current items in cart:</h2>
 
 {{#each shoppingCart.items as |item|}}
   <div class="row">
-    <div class="col-xs-4 col-xs-offset-4">
+
       <div class="well">
         <h2>{{item.description}}</h2>
         <h3>${{item.price}}</h3>
         <img class="img-responsive" id="cartImage" src="{{item.image}}" alt="{{item.description}}"/>
 
       </div>
-    </div>
+  
   </div>
 {{/each}}
-
-<br>
-<h3 id="totalCost">Total: ${{totalCost}}.00</h3>

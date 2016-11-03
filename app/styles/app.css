@@ -1,6 +1,10 @@
 body {
   text-align: center;
+}
 
+img {
+  display: block;
+  margin: auto;
 }
 
 h1, h2, h3 {
@@ -41,8 +45,11 @@ li {
 }
 
 .well {
-  width: 100%;
+  width: 50%;
   text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 .ui.form {
@@ -60,7 +67,13 @@ li {
   width: auto;
 }
 
-
+#reviewWell {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
 
 /*#cartImage {
   height: 300px;
