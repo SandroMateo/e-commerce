@@ -36,6 +36,8 @@ li {
   text-align: center;
   margin-top: 0;
   font-size: 5em;
+  height: 10%;
+  width: auto;
 }
 
 .well {
@@ -49,10 +51,21 @@ li {
   margin: auto;
 }
 
+.ui.button {
+  margin: 10px;
+}
+
 #detailImage {
   height: 700px;
   width: auto;
 }
+
+
+
+/*#cartImage {
+  height: 300px;
+  width: auto;
+}*/
 
 #login {
   float: right;

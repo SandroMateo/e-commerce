@@ -11,13 +11,10 @@ export default Ember.Service.extend({
 
   logout() {
     this.set('loggedIn', false);
-  },
-
-  adminLogin() {  
-    this.set('admin', true);
-  },
-
-  adminLogout() {
     this.set('admin', false);
+  },
+
+  adminLogin() {
+    this.set('admin', true);
   }
 });

@@ -13,6 +13,11 @@ export default Ember.Component.extend({
       this.set('name', '');
       this.set('password', '');
       this.sendAction('login');
+    },
+
+    logout() {
+      this.get('userLogin').logout();
+      this.sendAction('logout');
     }
   }
 });

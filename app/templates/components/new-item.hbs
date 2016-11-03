@@ -1,0 +1,37 @@
+{{#if userLogin.admin}}
+  {{#if showNewItemForm}}
+    <form class="ui form" {{action 'addItem' on='submit'}}>
+      <div class="field">
+        <label for="description">Description</label>
+        {{input value=description type="text" required="required" placeholder="What is this item?"}}
+      </div>
+      <div class="field">
+        <label for="price">Price</label>
+        {{input value=price type="number" required="required" placeholder="$0"}}
+      </div>
+      <div class="field">
+        <label for="details">Details</label>
+        {{input value=details type="text" placeholder="additional details"}}
+      </div>
+      <div class="field">
+        <label for="size">Size</label>
+        {{input value=size type="text" required="required" placeholder="S/M/L/XL..."}}
+      </div>
+      <div class="field">
+        <label for="sex">Sex</label>
+        {{input value=sex type="text" required="required" placeholder="men/women/other..."}}
+      </div>
+      <div class="field">
+        <label for="image">Image</label>
+        {{input value=image type="text" required="required" placeholder="url"}}
+      </div>
+      <div class="field">
+        <label for="type">Type</label>
+        {{input value=type type="text" required="required" placeholder="shoe/shirt/pants..."}}
+      </div>
+      <button class="ui primary button" type="submit">Add</button>
+    </form>
+  {{else}}
+    <button class="ui primary button" {{action 'showItemForm'}}>New Item</button>
+  {{/if}}
+{{/if}}

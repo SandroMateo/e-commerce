@@ -1,20 +1,23 @@
-<form class="ui form" {{action 'login' on="submit"}}>
-  <div class="field">
-    <label for="name">Name</label>
-    {{input value=name type="text" required="required"}}
-  </div>
-  <div class="field">
-    <label for="password">Password</label>
-    {{input value=password type="password" required="required"}}
-  </div>
-  <div class="grouped inline fields">
+{{#if userLogin.loggedIn}}
+  <button class="ui primary button" {{action 'logout'}}>Logout</button>
+{{else}}
+  <form class="ui form" {{action 'login' on="submit"}}>
     <div class="field">
-      {{ui-radio name="admin" label="admin" value="admin" current=user onChange=(action (mut user))}}
+      <label for="name">Name</label>
+      {{input value=name type="text" required="required"}}
     </div>
     <div class="field">
-      {{ui-radio name="customer" label="customer" value="customer" current=user onChange=(action (mut user))}}
+      <label for="password">Password</label>
+      {{input value=password type="password" required="required"}}
     </div>
-  </div>
-
-  <button type="submit" class="ui primary button">Login</button>
-</form>
+    <div class="grouped inline fields">
+      <div class="field">
+        {{ui-radio name="admin" label="admin" value="admin" current=user onChange=(action (mut user))}}
+      </div>
+      <div class="field">
+        {{ui-radio name="customer" label="customer" value="customer" current=user onChange=(action (mut user))}}
+      </div>
+    </div>
+    <button type="submit" class="ui primary button">Login</button>
+  </form>
+{{/if}}
