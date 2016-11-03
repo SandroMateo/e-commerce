@@ -6,7 +6,11 @@
     </div>
     <div class="form-group">
       <label for="rating">Rating:</label>
-      {{input type="number" value=rating}}
+      {{ui-rating
+    initialRating=rating
+    rating=rating
+    maxRating=5
+    onRate=(action (mut rating))}} - Rating {{rating}}
     </div>
     <div class="form-group">
       <label for="comment">Comment:</label>

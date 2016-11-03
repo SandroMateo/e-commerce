@@ -12,6 +12,8 @@ export default Ember.Route.extend({
      newReview.save().then(function() {
        return item.save();
      });
+     this.set('author', '');
+     this.set('content', '');
      this.transitionTo('review');
     },
 

@@ -1,10 +1,10 @@
-import { sortShoe } from 'e-commerce/helpers/sort-shoe';
+import { starRating } from 'e-commerce/helpers/star-rating';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | sort shoe');
+module('Unit | Helper | star rating');
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  let result = sortShoe([42]);
+  let result = starRating([42]);
   assert.ok(result);
 });
