@@ -1,5 +1,14 @@
 body {
   text-align: center;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
 }
 img {
   height: 300px;
@@ -10,8 +19,13 @@ li {
   list-style-type: none;
 }
 
+.container {
+  margin-bottom: 20px;
+}
+
 .ui.inverted.segment {
   background-color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
