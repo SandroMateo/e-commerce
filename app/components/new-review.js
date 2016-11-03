@@ -7,11 +7,15 @@ export default Ember.Component.extend({
       this.set('addNewReview', true);
     },
 
-    // addReview() {
-    //   var params = {
-    //     rating: this.get('rating'),
-    //     // comment: this.
-    //   }
-    // }
+    addReview() {
+      var params = {
+        author: this.get('author'),
+        rating: this.get('rating'),
+        comment: this.get('comment'),
+        item: this.get('item')
+      };
+      this.set('addNewReview', false);
+      this.sendAction('saveReview', params);
+    }
   }
 });
