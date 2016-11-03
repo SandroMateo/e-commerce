@@ -1,10 +1,10 @@
 {{#if addNewReview}}
-  <form>
-    <div class="form-group">
+  <form class="ui form">
+    <div class="field">
       <label for="author">Name:</label>
       {{input type="text" value=author}}
     </div>
-    <div class="form-group">
+    <div class="field">
       <label for="rating">Rating:</label>
       {{ui-rating
     initialRating=rating
@@ -12,7 +12,7 @@
     maxRating=5
     onRate=(action (mut rating))}} - Rating {{rating}}
     </div>
-    <div class="form-group">
+    <div class="field">
       <label for="comment">Comment:</label>
       {{input type="text" value=comment}}
     </div>
