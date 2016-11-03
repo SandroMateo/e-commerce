@@ -13,6 +13,11 @@ export default Ember.Route.extend({
        return item.save();
      });
      this.transitionTo('review');
+    },
+
+    destroyReview(review) {
+      review.destroyRecord();
     }
+
   }
 });

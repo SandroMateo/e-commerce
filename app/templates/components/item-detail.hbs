@@ -5,4 +5,9 @@
 <h2>More Details</h2>
 <h4>Size: {{item.size}}</h4>
 <h4>About this:</h4> <p>{{item.details}}</p>
-<h3>Reviews go here</h3>
+<h3>Reviews go here:</h3>
+<ul>
+  {{#each item.reviews as |review|}}
+    {{review-tile review=review delete="deleteReview"}}
+  {{/each}}
+</ul>
