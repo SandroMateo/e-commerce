@@ -1,19 +1,20 @@
+body {
+  text-align: center;
+}
 img {
   height: 300px;
   width: auto;
+}
+
+li {
+  list-style-type: none;
 }
 
 .ui.inverted.segment {
   background-color: black;
 }
 
-.ui.icon.button {
-  float: right;
-  color: blue;
-  margin-right: 0;
-  margin-left: auto;
 
-}
 
 .jumbotron {
   color: white;
@@ -30,4 +31,11 @@ img {
 #detailImage {
   height: 700px;
   width: auto;
+}
+
+#login {
+  float: right;
+  margin-right: 0;
+  margin-left: auto;
+
 }

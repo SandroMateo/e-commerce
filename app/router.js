@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('women');
   this.route('shoes');
   this.route('review', { path: '/review/:item_id' });
+  this.route('login');
 });
 
 export default Router;
