@@ -1,4 +1,3 @@
-{{shoe-list items=model}}
-{{#each model as |item|}}
-  {{log item.id}}
+{{#each model as |shoe|}}
+  {{shoe-list shoe=shoe}}
 {{/each}}

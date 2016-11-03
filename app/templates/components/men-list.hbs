@@ -1,9 +1,8 @@
-{{#each menSort as |men|}}
-  {{#link-to 'review' men.id}}
-  <h2>{{men._data.description}}, ${{men._data.price}}.00</h2>
-  <h4>{{men._data.details}}</h4>
-  <img src={{men._data.image}} alt="" />
-  {{/link-to}}
-  <br>
-  <button class="ui primary button" {{action 'addToCart' men._data}}>Add To Cart</button>
-{{/each}}
+{{log item}}
+{{#link-to 'review' item.id}}
+<h2>{{item.description}}, ${{item.price}}.00</h2>
+<h4>{{item.details}}</h4>
+<img src={{item.image}} alt="" />
+{{/link-to}}
+<br>
+<button class="ui primary button" {{action 'addToCart' item}}>Add To Cart</button>

@@ -1,9 +1,7 @@
-{{#each womenSort as |women|}}
-  {{#link-to 'review' women.id}}
-  <h2>{{women._data.description}}, ${{women._data.price}}.00</h2>
-  <h4>{{women._data.details}}</h4>
-  <img src={{women._data.image}} alt="" />
-  {{/link-to}}
-  <br>
-  <button class="ui primary button" {{action 'addToCart' women._data}}>Add To Cart</button>
-{{/each}}
+{{#link-to 'review' item.id}}
+<h2>{{item.description}}, ${{item.price}}.00</h2>
+<h4>{{item.details}}</h4>
+<img src={{item.image}} alt="" />
+{{/link-to}}
+<br>
+<button class="ui primary button" {{action 'addToCart' item}}>Add To Cart</button>

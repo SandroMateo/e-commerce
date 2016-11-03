@@ -7,11 +7,11 @@ export default Ember.Component.extend({
       this.set('addNewReview', true);
     },
 
-    addReview() {
-      var params = {
-        rating: this.get('rating'),
-        comment: this.
-      }
-    }
+    // addReview() {
+    //   var params = {
+    //     rating: this.get('rating'),
+    //     // comment: this.
+    //   }
+    // }
   }
 });
